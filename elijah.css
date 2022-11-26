@@ -1,0 +1,21 @@
+.main-body{
+    background-image: url(./BAN\ X\ KING.jpg);
+    background-color: rgba(0, 100, 0, 0.699);
+    padding: 50px;
+}
+.btn {background-color: rgb(39, 20, 6);
+color: rgb(247, 247, 247);
+padding: 25px 5px;
+}
+.header-one {
+    font-size: 5rem;
+}
+.first-parent{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+.second-child img{
+max-width: 500px;
+border-radius: 50%;
+}
