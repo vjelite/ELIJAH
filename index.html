@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+<nav>
+    <img src="LOGO 2.png" class="logo">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        <i class="fa-regular fa-circle-xmark"></i>
+    </ul>
+</nav>
+<div class="header-text">
+    <p>Programmer</p>
+    <h1>Hey, I am <span> ELIJAH</span> <br>ADAH from Nigeria</h1>
+</div>
+    </div>
+</div>
+<!-- ------------------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1"></div>
+            <h1></h1>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I go by the name Elijah,I'm a young programmer currently settling in Nigeria </p>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web</span><br>Designing</li>
+                            <li><span>App</span><br>Programmer</li>
+                            <li><span>Designing</span><br>Android/windows apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">7
+                        <ul>
+                            <li><span>2022 </span><br>New Horizon, Lagos, Nigeria</li>
+                            <li><span>2022 </span><br>New Horizon, Lagos, Nigeria</li>
+                            <li><span>2022 </span><br>FCMB, Lagos, Nigeria</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  --------------services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class=""></i>
+                <h2>Web Design</h2>
+                <p>One of my main focus now is the creation of Web design and i believe i have enough experience to fit your taste</p>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Android/Windows apps</h2>
+                <p>I also program applications for both the android and the windows operating system</p>
+ 
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <hi class="sub-title">My Work</hi>
+        <div class="work-list">
+            <div class="work">
+                <img src="./PPORTFLIO.png" alt="PORTFOLIO">
+                <div class="layer">
+                    <h3>PORTFOLIO</h3>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./currency convereter.png" alt="CURRENCY CONVERTER">
+                <div class="layer">
+                    <h3>CURRENCY CONVERTER</h3>
+                    <a href="CURRENCY CONVERTER/CURRENCY CONVERTER.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-circle-xmark"></i>elijahadah795@gmail.com</p>
+                <p><i class="fa-up-right-from-square"></i>08122191521</p>
+                <div class="social-icons">
+                    <a href="hhtps://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6 "placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright <i class="fa-regular fa-copyright"></i>ELITE STUDIOS</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-link");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
